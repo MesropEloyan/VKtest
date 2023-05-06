@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Бронирование переговорной</title>
+    <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+    <h1>Бронирование переговорной</h1>
+    <form id="reservation-form">
+        <label for="tower">Башня:</label>
+        <select id="tower">
+        <option disabled selected>Выберите башню:</option>
+        <option value="A">А</option>
+        <option value="B">Б</option>
+        </select><br><br>
+
+        <label for="floor">Этаж:</label>
+        <select id="floor">
+          <option disabled selected>Выберите этаж:</option>
+        </select>
+        <br><br>
+
+        <label for="room">Переговорка:</label>
+        <select id="room">
+            <option disabled selected>Выберите комнату:</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br><br>
+
+        
+        <label for="date">Дата:</label>
+        <input type="date" id="date" min="2023-01-01" max="2099-09-13"><br><br>
+
+        <label for="time-start">Назначьте начало встречи:</label>
+        <input type="time" id="time-start"
+        min="09:00" max="18:00" required><br><br>
+
+        <label for="time-end">Назначьте конец встречи:</label>
+        <input type="time" id="time-end"
+        min="09:00" max="21:00" required><br><br>
+
+        <label for="comment">Комментарий:</label>
+        <textarea id="comment" rows="5"></textarea><br><br>
+
+        <button type="submit">Отправить</button>
+        <button type="button" id="clear">Очистить</button>
+    </form>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
